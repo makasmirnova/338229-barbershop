@@ -4,6 +4,25 @@ body {
 	color: #000000;
 	font-weight: bold;
 	font-family: "PT Sans Narrow", Helvetica, sans-serif;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	padding: 0 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 940px;
+	background-color: pink;
 }
 h1 {
 	font-size: 30px;
@@ -12,10 +31,107 @@ h1 {
 	font-weight: bold;
 	font-family: "PT Sans Narrow";
 }
+
 h2 {
 	font-size: 24px;
 	line-height: 30px;
 	color: #000000;
 	font-weight: bold;
 	font-family: "PT Sans Narrow";
+}
+
+.main-header {
+	background-color: red;
+	min-height: 70px;
+	margin-bottom: 55px;
+}
+
+.nav-container {
+	background-color: green;
+	width: 780px;
+	float: left;
+}
+
+.login-block {
+	background-color: yellow;
+	width: 140px;
+	float: right;
+}
+
+.page-header {
+	margin-bottom: 55px;
+}
+
+.page-content {
+	margin-bottom: 50px;
+}
+
+.container-filters {
+	float: left;
+	width: 220px;
+	background-color: tomato;
+	margin-right: 20px;
+}
+
+.container-items {
+	background-color: red;
+	float: left;
+	width: 700px;
+}
+
+.item {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 220px;
+}
+
+.item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.items {
+margin-bottom: 45px;
+}
+
+.main-footer {
+	background-color: green;
+	padding: 60px 0 40px 0;
+}
+
+.footer-contacts {
+	background-color: tomato;
+	width: 380px;
+	float: left;
+	min-height: 80px;
+	margin-right: 20px;
+}
+
+.footer-social {
+	background-color: orange;
+	width: 380px;
+	float: left;
+	min-height: 80px;
+	margin-right: 20px;
+}
+
+.footer-copyright {
+	background-color: violet;
+	width: 140px;
+	float: right;
+	min-height: 80px;
+}
+
+.product {
+	margin-bottom: 50px;
+}
+
+.product-photo {
+	float: left;
+	width: 460px;
+}
+
+.product-data {
+	float: right;
+	width: 390px;
 }
